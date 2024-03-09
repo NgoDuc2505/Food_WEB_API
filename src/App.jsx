@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import Header from "./components/header";
-import Banner from "./components/banner";
-import ProductList from "./components/product-list";
-import Footer from "./components/footer";
-import Cart from "./components/cart";
+import Header from "./components/header.jsx";
+import Banner from "./components/banner.jsx";
+import ProductList from "./components/product-list.jsx";
+import Footer from "./components/footer.jsx";
+import Cart from "./components/Cart.jsx";
 import { BASE_URL, getCardListFromLocal } from "./util/const.js";
 import Modal from "./components/modal.jsx";
+import axios from "axios";
 
 function App() {
   const [products, setProducts] = useState([]);
